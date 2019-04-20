@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!--Question 1
+Level 1
+
+Question:
+Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5,
+between 2000 and 3200 (both included).
+The numbers obtained should be printed in a comma-separated sequence on a single line.
+-->
+    
+    <script>
+        
+        document.write("<h1>ANS ONE</h1>");
+        for (var i=1;i<=100;i++){
+            if((i%5==0) && (i%7!=0)){
+                document.write(i +"<br>");
+            }
+        }
+        
+    </script>
+    
+    <!--Question 2
+Level 1
+
+Question:
+Write a program which can compute the factorial of a given numbers.
+The results should be printed in a comma-separated sequence on a single line.
+Suppose the following input is supplied to the program:
+8
+Then, the output should be:
+40320--><!--
+     <script>
+        
+        document.write("<h1>ANS TWO</h1>");
+        var x= 1;
+         var y= parseInt(prompt("Enter the number",""));
+         
+         for(var i=1;i<=y;i++){
+             x=x*i;
+         }
+         document.write("Factorial of " +y+ " is " + x +"<br>");
+        
+    </script>-->
+    
+    
+    <!--Question 3
+Level 1
+
+Question:
+With a given integral number n, write a program to generate a dictionary that contains (i, i*i) such that is an integral number between 1 and n (both included). and then the program should print the dictionary.
+Suppose the following input is supplied to the program:
+8
+Then, the output should be:
+{1: 1, 2: 4, 3: 9, 4: 16, 5: 25, 6: 36, 7: 49, 8: 64}
+
+-->
+    <!--<script>
+        
+        var x = parseInt(prompt("enter number for square",""));
+        for(var i=1; i<=x;i++){
+            var y=i*i;
+            document.write(i+" : "+y+" , ");
+                
+        }
+        
+    </script>-->
+<!--Question 5
+Level 1
+
+Question:
+Define a class which has at least two methods:
+getString: to get a string from console input
+printString: to print the string in upper case.
+Also please include simple test function to test the class methods.
+
+-->
+
+<!--
+<script>
+        
+        var x = prompt("enter a string","");
+        var y= x.toLowerCase();
+        document.write(y);
+    </script>
+-->
+
+<!--
+Question 6
+Level 2
+
+Question:
+Write a program that calculates and prints the value according to the given formula:
+Q = Square root of [(2 * C * D)/H]
+Following are the fixed values of C and H:
+C is 50. H is 30.
+D is the variable whose values should be input to your program in a comma-separated sequence.
+Example
+Let us assume the following comma separated input sequence is given to the program:
+100,150,180
+The output of the program should be:
+18,22,24
+-->
+<script>
+    var c = 50;
+    var h = 30;
+        var x =[];
+    for(var i=0; i<3;i++){
+        var y= parseInt(prompt());
+        x.push(y);
+        var result= Math.round(Math.sqrt((2*c*x[i])/h));
+        document.write(result +" , ");
+    }
+
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
